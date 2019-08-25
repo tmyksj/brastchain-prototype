@@ -1,0 +1,26 @@
+.bc-op-master {
+    margin: 0.5rem;
+    position: fixed;
+    z-index: 1;
+}
+
+.bc-sticky-note {
+    border: calc(1rem / 16) solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    height: 9rem;
+    padding: 0.25rem;
+    position: absolute;
+    width: 16rem;
+}
+
+.bc-sticky-note.bc-sticky-note__body {
+    height: calc(100% - 3rem);
+    resize: none;
+    width: calc(100% - 0.5rem);
+}
+
+.bc-whiteboard {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
