@@ -26,3 +26,9 @@
     position: relative;
     width: 100vw;
 }
+
+.bc-whiteboard-chain-wrapper {
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
