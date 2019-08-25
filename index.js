@@ -8,15 +8,15 @@
             this.elWhiteboard = document.querySelector("#bc-whiteboard");
 
             this.elOpMasterAppend.addEventListener("click", () => {
-                this.append();
+                this.append(100, 100);
             });
         }
 
-        append() {
+        append(left, top) {
             const div = document.createElement("div");
             div.innerHTML = `
                 <div class="bc-sticky-note"
-                     style="top: 100px; left: 100px">
+                     style="left: ${left}px; top: ${top}px;">
                     <button class="bc-op-sticky-note-append btn btn-light"
                             type="button">+</button>
                     <textarea class="bc-sticky-note bc-sticky-note__body form-control"></textarea>
@@ -28,7 +28,7 @@
             $(el).draggable();
 
             el.querySelector(".bc-op-sticky-note-append").addEventListener("click", () => {
-                this.append();
+                this.append(parseInt(el.style.left.slice(0, -2)) + 32, parseInt(el.style.top.slice(0, -2)) + 32);
             });
         }
     }
