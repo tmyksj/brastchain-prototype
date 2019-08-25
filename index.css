@@ -15,11 +15,10 @@
     width: 16rem;
 }
 
-.bc-sticky-note.bc-sticky-note__body {
+.bc-sticky-note__body {
     cursor: text;
-    height: calc(100% - 3rem);
+    height: calc(100% - 2.4rem) !important;
     resize: none;
-    width: calc(100% - 0.5rem);
 }
 
 .bc-whiteboard {
