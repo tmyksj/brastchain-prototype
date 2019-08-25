@@ -13,8 +13,8 @@
         }
 
         append() {
-            const el = document.createElement("div");
-            el.innerHTML = `
+            const div = document.createElement("div");
+            div.innerHTML = `
                 <div class="bc-sticky-note"
                      style="top: 100px; left: 100px">
                     <button class="btn btn-light"
@@ -23,7 +23,9 @@
                 </div>
             `;
 
-            this.elWhiteboard.appendChild(el.querySelector(".bc-sticky-note"));
+            const el = div.querySelector(".bc-sticky-note");
+            this.elWhiteboard.appendChild(el);
+            $(el).draggable();
         }
     }
 
