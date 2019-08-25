@@ -29,7 +29,7 @@
 
             el.querySelector(".bc-op-sticky-note-append").addEventListener("click", () => {
                 this.append();
-            })
+            });
         }
     }
 
